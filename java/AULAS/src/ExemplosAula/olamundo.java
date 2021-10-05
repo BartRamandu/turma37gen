@@ -1,4 +1,4 @@
-package lista1;
+package ExemplosAula;
 import java.util.Scanner;
 
 public class olamundo{
