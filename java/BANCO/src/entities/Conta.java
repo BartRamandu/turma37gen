@@ -30,15 +30,13 @@ public abstract class Conta {
 	public double getSaldo() {
 		return saldo;
 	}
-	
+
 	public void debito(double valor){
 		this.saldo-=valor;
-	
 	}
 	
 	public void credito(double valor) {
 		this.saldo+=valor;
 	}
-	
-	
+
 }

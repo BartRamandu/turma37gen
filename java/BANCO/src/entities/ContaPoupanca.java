@@ -24,7 +24,7 @@ public class ContaPoupanca extends Conta{
 		int resultado =  2021-diaAniversarioPoupanca ;
 		
 		if(resultado>1) {
-		saldo+=((saldo*1.05)-saldo);
+		saldo+=(saldo*(0.05*resultado));
 		}
 	}	
 	
