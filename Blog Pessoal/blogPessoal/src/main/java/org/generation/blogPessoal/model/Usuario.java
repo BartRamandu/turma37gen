@@ -40,7 +40,6 @@ public class Usuario {
 	@Size(min = 5, max = 100, message = "O atributo senha tem de ter no mínimo 05" + " e no máximo 100 caracteres.")
 	private String senha;
 
-	@NotBlank(message = "O atributo foto não pode ser vazio e nem nulo.")
 	@Size(min = 5, max = 200, message = "O atributo foto recebe link onde uma imagem em um banco de dados existe.")
 	private String foto;
 
@@ -52,7 +51,8 @@ public class Usuario {
 	@JsonIgnoreProperties({ "criador" })
 	private List<Postagem> minhasPostagens = new ArrayList<>();
 
-	public Usuario(String nome, String usuario, String senha, LocalDate dataNascimento) {
+	public Usuario(long id,String nome,String usuario,String senha,LocalDate dataNascimento) {
+		this.id = id;
 		this.nome = nome;
 		this.usuario = usuario;
 		this.senha = senha;
